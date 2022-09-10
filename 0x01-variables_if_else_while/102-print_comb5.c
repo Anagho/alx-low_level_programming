@@ -21,9 +21,9 @@ int main(void)
 		{
 			c = j / 10; /* 2nd double number */
 			d = j % 10; /* 2nd single number */
-
+			
 			if (a < c || (a == c && b < d))
-		 	{
+			{
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(' ');
@@ -35,8 +35,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			}		
+
+			}
+
 		}
+
 	}
 	putchar(10);
 
