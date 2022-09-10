@@ -35,11 +35,8 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-
 			}
-
 		}
-
 	}
 	putchar(10);
 
