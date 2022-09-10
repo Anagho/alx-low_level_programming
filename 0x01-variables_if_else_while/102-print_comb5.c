@@ -10,36 +10,34 @@
  * `00 01` and `01 00` are considered as the same combination.
  * You can only use `putchar` to print to console.
  * You can only use `putchar` up to 8 times.
- * You are not allowed to use any variable of type `char`.
  * Return: 0
  */
 int main(void)
 {
-	int i, j;
-	int a, b, c, d;
+	int i, j, a, b, c, d;
 
 	for (i = 0; i < 100; i++)
 	{
-		a = i / 10; /* doubles fnum */
-		b = i % 10; /* singles fnum */
+		a = i / 10; /* 1st double number */
+		b = i % 10; /* 1st single number */
 
 		for (j = 0; j < 100; j++)
 		{
-			c = j / 10; /* doubles snum */
-			d = j % 10; /* singles snum */
+			c = j / 10; /* 2nd double number */
+			d = j % 10; /* 2nd single number */
 
 			if (a < c || (a == c && b < d))
 			{
 				putchar(a + '0');
 				putchar(b + '0');
-				putchar(32);
+				putchar(' ');
 				putchar(c + '0');
 				putchar(d + '0');
 
 				if (!(a == 9 && b == 8))
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
