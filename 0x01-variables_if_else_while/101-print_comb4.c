@@ -17,7 +17,7 @@ int main(void)
 	for (i = 0; i < 1000; i++)
 	{
 		j = i / 100; /* get 1st digit - hundreds */
-		k = (i / 10); /* get 2nd digit - tens, but smallest combination */
+		k = (i / 10) % 10; /* get 2nd digit - tens, but smallest combination */
 		l = i % 10; /* get the last digit - units */
 
 		if (k > j && k < l)
