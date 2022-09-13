@@ -6,7 +6,7 @@
  * @c: the integer value it receives
  * Return: 1 if true, 0 if false.
  */
-int is_lower(int c)
+int _islower(int c)
 {
 	int i;
 
