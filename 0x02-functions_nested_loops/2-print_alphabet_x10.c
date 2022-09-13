@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * Description: function prints the alphabet in lowercase 10 times
+ * 2-print_alphabet_x10.c - function prints the alphabet in lowercase 10 times
  */
 void print_alphabet_x10(void)
 {
@@ -11,13 +11,11 @@ void print_alphabet_x10(void)
 	while (n < 10)
 	{
 		ch = 'a';
-
 		while (ch <= 'z')
 		{
 			_putchar(ch);
 			ch++;
 		}
-
 		n++;
 		_putchar('\n');
 	}
