@@ -2,8 +2,8 @@
 
 /**
  * print_alphabet_x10 - function prints the alphabet in lowercase 10 times
- * Return: 0, Always on success
  */
+
 void print_alphabet_x10(void)
 {
 	char ch;
@@ -19,6 +19,5 @@ void print_alphabet_x10(void)
 		}
 		n++;
 		_putchar('\n');
-		
 	}
 }
