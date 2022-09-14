@@ -2,6 +2,7 @@
 
 /**
  * 2-print_alphabet_x10.c - function prints the alphabet in lowercase 10 times
+ * Return: 0, Always on success
  */
 void print_alphabet_x10(void)
 {
