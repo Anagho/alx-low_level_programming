@@ -4,30 +4,19 @@
  * print_rev - prints a string in reverse, followed by a new line
  * @s: string to be printed
  */
-int _strlen(char *str)
+
+void print_rev(char *s)
 {
-	int len;
-	
-	for (len = 0; *(str + len) != '\0' ;)
+	int i, len;
+
+	for (; s[len] != '\0' ;)
 	{
 		len++;
 	}
 
-	return (len);
-}
-
-void print_rev(char *s)
-{
-	int i, length;
-	char temp;
-
-	length = _strlen(s);
-
-	for (i = 0; i < length / 2; i++)
+	for (i = len - 1; i >= 0; i--)
 	{
-		temp = s[i];
-		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
+		_putchar(s[i]);
 	}
 
 	_putchar('\n');
